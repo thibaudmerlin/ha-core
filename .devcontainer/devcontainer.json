@@ -7,6 +7,9 @@
   "containerEnv": { "DEVCONTAINER": "1" },
   "appPort": ["8123:8123"],
   "runArgs": ["-e", "GIT_EDITOR=code --wait"],
+  "mounts": [
+    "source=${localEnv:USERPROFILE}\\OneDrive - KYOS SA\\Documents\\Kyos\\Repository\\ha-cards,target=/workspaces/ha-core/config/www/ha-cards,type=bind,consistency=cached"
+  ],
   "customizations": {
     "vscode": {
       "extensions": [
